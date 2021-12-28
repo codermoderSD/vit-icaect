@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+}
+
+.nav_container {
+  background-color: #0f2c44;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.fullform {
+  display: flex;
+  flex-direction: column;
+  margin-right: 0.8rem;
+}
+
+.img-fluid {
+  margin-bottom: 0.6rem;
+}
+
+.main_container {
+  width: 95%;
+  height: auto;
+  margin: 1.5rem auto;
+  padding: 1rem;
+  background: rgba(15, 44, 68, 0.22);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11.7px);
+  -webkit-backdrop-filter: blur(11.7px);
+  border: 1px solid rgba(15, 44, 68, 0.3);
+}
+
+.img_holder {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.img_holder > img {
+  margin: 0.5rem 0.3rem;
+  width: 32%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 0.5rem;
+}
+
+.btn_container {
+  width: 100%;
+  margin: 0.6rem 0 0.2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  color: #0f2c44;
+  background-color: #fff;
+  outline: none;
+  border: none;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border-radius: 10rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #0f2c44;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border-radius: 10rem;
+}
+
+@media only screen and (max-width: 792px) {
+  .img_holder > img {
+    width: 47%;
+  }
+}
+
+@media only screen and (max-width: 607px) {
+  .fullform {
+    display: none;
+    margin: 0;
+  }
+  .logo_vit {
+    width: 7rem;
+  }
+  .nav_container {
+    padding: 0.5rem 1rem;
+  }
+  .main_container {
+    width: 98%;
+    height: auto;
+    margin: 0.5rem auto;
+    padding: 0.3rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .img_holder > img {
+    width: 98%;
+  }
+  .main_container {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+  .btn {
+    padding: 0.5rem 0.7rem;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+}
