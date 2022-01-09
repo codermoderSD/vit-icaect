@@ -490,6 +490,62 @@ a {
 }
 
 /****************** Brochure **********************/
+
+.patron {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.patron > h1 {
+  margin: 0.5rem 0 0.5rem 1rem;
+  color: #073f49;
+  font-size: 2.5rem;
+}
+
+.patron_cards {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.patron_card {
+  width: 17rem;
+  margin: 0.5rem;
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.2rem;
+  background: rgba(74, 74, 116, 0.11);
+  color: #4a4a74;
+}
+
+.patron_card > h3 {
+  font-size: 1.1rem;
+}
+.patron_card > p {
+  font-size: 0.9rem;
+}
+
+.contri_card {
+  width: 14rem;
+  margin: 0.7rem 0.4rem;
+  padding: 0.7rem 0 0.7rem 0.6rem;
+  border-radius: 0.2rem;
+  background: rgba(7, 63, 73, 0.11);
+  color: #074955;
+}
+
+.contri_card > h3 {
+  font-size: 1rem;
+}
+.contri_card > p {
+  font-size: 0.75rem;
+}
+
+/****************** Brochure **********************/
 .brochure {
   width: 100%;
   padding: 1.5rem 0;
@@ -606,7 +662,7 @@ a {
   }
   .about_svg {
     width: 25% !important;
-    top: 49% !important;
+    top: 51% !important;
   }
 
   .objective_info {
@@ -704,8 +760,9 @@ a {
   .schedule > h1,
   .details > h1,
   .about > h1,
-  .objective > h1 {
-    margin: 0 0 1rem 1rem;
+  .objective > h1,
+  .patron > h1 {
+    margin: 0.5rem 0 0.5rem 1rem;
     font-size: 1.5rem;
   }
   .schedule_day_1,
@@ -789,7 +846,7 @@ a {
   }
   .about_svg {
     width: 25% !important;
-    top: 46% !important;
+    top: 48% !important;
     opacity: 0.6;
   }
   .about > h2 {
@@ -824,6 +881,12 @@ a {
     font-size: 0.9rem;
   }
 
+  .patron {
+    width: 100%;
+    margin: 0.3rem auto;
+    padding: 0.5rem;
+  }
+
   .objective {
     width: 100%;
     margin: 1rem auto;
@@ -832,6 +895,16 @@ a {
     padding: 1rem;
   }
   .footer_item > p {
+    font-size: 0.9rem;
+  }
+  .patron_card {
+    width: 15rem;
+    padding: 0.6rem 0 0.6rem 1rem;
+  }
+  .patron_card > h1 {
+    font-size: 1rem;
+  }
+  .patron_card > p {
     font-size: 0.9rem;
   }
 }
@@ -941,6 +1014,12 @@ a {
 
   .about > div {
     font-size: 0.8rem;
+  }
+
+  .about_svg {
+    width: 25% !important;
+    top: 47.5% !important;
+    opacity: 0.6;
   }
 
   .objective_info > p {
