@@ -489,7 +489,64 @@ a {
   font-size: 1.05rem;
 }
 
-/****************** Brochure **********************/
+/****************** Speaker **********************/
+
+.speakers {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem 1rem;
+  background-color: #fff;
+}
+
+.speakers > h1 {
+  margin: 0.5rem 0 0.5rem 1rem;
+  color: #073f49;
+  font-size: 2.5rem;
+}
+
+.speaker-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.speaker__card {
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #0b677725;
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+
+.speaker__card > img {
+  width: 10rem;
+  height: 10rem;
+  border: 3px solid #0749559a;
+  border-radius: 50%;
+  object-position: top;
+}
+
+.speaker__card__text {
+  /* flex: 1; */
+  margin-left: 2rem;
+}
+
+.speaker__card__text > .speaker__card__header {
+  font-size: 2rem;
+  color: #074955;
+}
+
+.speaker__card__text > .speaker__card__desc {
+  font-style: italic;
+  color: rgb(94, 94, 94);
+  word-wrap: break-word;
+}
+
+/****************** Patron **********************/
 
 .patron {
   width: 100%;
@@ -699,6 +756,39 @@ a {
     top: 35%;
     right: 2%;
   }
+
+  .speakers > h1 {
+    font-size: 2rem;
+  }
+
+  .speaker__card {
+    padding: 1rem;
+    margin-top: 1rem;
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .speaker__card > img {
+    width: 8rem;
+    height: 8rem;
+    border: 3px solid #0749559a;
+    border-radius: 50%;
+  }
+
+  .speaker__card__text {
+    margin: 0;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .speaker__card__text > .speaker__card__header {
+    font-size: 1.2rem;
+  }
+
+  .speaker__card__text > .speaker__card__desc {
+    font-size: 0.9rem;
+  }
 }
 
 @media only screen and (max-width: 792px) {
@@ -761,6 +851,7 @@ a {
   .details > h1,
   .about > h1,
   .objective > h1,
+  .speakers > h1,
   .patron > h1 {
     margin: 0.5rem 0 0.5rem 1rem;
     font-size: 1.5rem;
@@ -907,6 +998,12 @@ a {
   .patron_card > p {
     font-size: 0.9rem;
   }
+
+  .speakers {
+    width: 100%;
+    margin: 1rem auto;
+    padding: 1rem;
+  }
 }
 
 @media only screen and (max-width: 607px) {
@@ -1024,6 +1121,28 @@ a {
 
   .objective_info > p {
     font-size: 0.8rem;
+  }
+  .speaker__card {
+    padding: 1rem 0.5rem;
+    margin-top: 1rem;
+    width: 95%;
+  }
+
+  .speaker__card > img {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .speaker__card__text {
+    margin-top: 0.7rem;
+  }
+
+  .speaker__card__text > .speaker__card__header {
+    font-size: 1.1rem;
+  }
+
+  .speaker__card__text > .speaker__card__desc {
+    font-size: 0.7rem;
   }
 }
 
